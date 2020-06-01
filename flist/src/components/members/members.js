@@ -48,7 +48,7 @@ const Members = () => {
       break;
   }
   return (
-    <div className="app">
+    <div className="members">
       <Header />
 
       {people[1] ? (

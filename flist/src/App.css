@@ -36,3 +36,128 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+}
+
+header {
+  background-color: transparent;
+  border: 0;
+  width: 50px;
+  cursor: pointer;
+}
+
+header button {
+  background-color: transparent;
+  border: 0;
+  width: 50px;
+  cursor: pointer;
+}
+
+header button img {
+  width: 100%;
+}
+
+header .fl {
+  float: left;
+  width: 33%;
+}
+
+header .fl:first-child {
+  text-align: left;
+}
+
+.person .person-photo {
+  overflow: hidden;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3);
+}
+
+.person .person-description {
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 1px;
+  background-color: white;
+}
+
+.person .person-info {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.personn img {
+  width: 500px;
+  height: 700;
+  display: block;
+}
+
+#actions {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#actions button {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  padding: 12px;
+  border: 0;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  cursor: pointer;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+
+#actions button img {
+  width: 100%;
+  height: auto;
+}
+
+#action button:nth-of-type(2),
+#actions button:nth-of-type(3) {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+}
+
+.pulse img {
+  width: 70%;
+  border-radius: 100px;
+  border: 5px solid white;
+}
+
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+  }
+  100% {
+    -webkit-box-hadow: 0 0 0 35px rgba (241, 201, 202, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-boz-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+    box-shadow: 0 0 0 0 rgba(241, 201, 202, 0.4);
+  }
+  100% {
+    -moz-boz-shadow: 0 0 0 0 rgba(241, 201, 202, 0);
+    box-shadow: 0 0 0 0 rgba(241, 201, 202, 0);
+  }
+}
