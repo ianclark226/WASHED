@@ -37,6 +37,10 @@
   }
 }
 
+ol, ul {
+  list-style: none;
+}
+
 header {
   background-color: white;
   overflow: hidden;
@@ -44,10 +48,14 @@ header {
 }
 
 header {
-  background-color: transparent;
-  border: 0;
-  width: 50px;
-  cursor: pointer;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+
 }
 
 header button {
@@ -89,7 +97,20 @@ header .fl:first-child {
   font-size: 20px;
 }
 
-.personn img {
+.person .person-name-age {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.person .person-info {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.person img {
   width: 500px;
   height: 700;
   display: block;
@@ -130,6 +151,53 @@ header .fl:first-child {
   width: 60px;
   height: 60px;
   padding: 15px;
+}
+
+#alone{
+  padding: 10px;
+  border-radius: 1px;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+#liked-person {
+  margin: auto;
+  overflow: hidden;
+}
+
+#liked-people .liked-person {
+  display: inline-block;
+  width: 33%;
+  margin-top: 10px;
+}
+
+#liked-people .liked-person-image {
+  border-radius: 5px;
+}
+
+#liked-people .liked-person-image img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.pulse {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #FFDEDF;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  border: 3px solid #F5C9CA;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pulse img {

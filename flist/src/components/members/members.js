@@ -6,9 +6,9 @@ import data from '../../data.json';
 
 const Members = () => {
   const [people, setPeople] = useState(data);
-  const [likedUsers, setLikedUsers] = useState(data);
-  const [superLikedUsers, setSuperLikedUsers] = useState(data);
-  const [dislikeUsers, setDislikedUsers] = useState(data);
+  const [likedUsers, setLikedUsers] = useState([]);
+  const [superLikedUsers, setSuperLikedUsers] = useState([]);
+  const [dislikeUsers, setDislikedUsers] = useState([]);
   const activeUser = 0;
 
   const modifySuperficialChoices = (userId, action) => {
@@ -19,7 +19,7 @@ const Members = () => {
   }
 
   switch (action) {
-    case 'ADD_TO _LIKED_USER':
+    case 'ADD_TO _LIKED_USERS':
      if (!people[activeUser].likedUsers.includes(userid)) {
          newPeople[activeUser].likedUsers.push(userId);
 
@@ -28,7 +28,7 @@ const Members = () => {
      }
       break;
 
-      case 'ADD_TO _DISLIKED_USER':
+      case 'ADD_TO _DISLIKED_USERS':
      if (!people[activeUser].dislikedUsers.includes(userid)) {
          newPeople[activeUser].dislikedUsers.push(userId);
 
@@ -38,7 +38,7 @@ const Members = () => {
       break;
 
 
-      case 'ADD_TO _SUPERLIKED_USER':
+      case 'ADD_TO _SUPERLIKED_USERS':
      if (!people[activeUser].superLikedUsers.includes(userid)) {
          newPeople[activeUser].supeLikedUsers.push(userId);
 

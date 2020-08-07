@@ -1,31 +1,32 @@
 import React from 'react';
-import LikePerson from './LikedPerson';
+import LikedPerson from './LikedPerson';
 
 const Alone = ({ activeUserImage, likedUsers, superLikedUsers }) => (
-    <div className="alone">
-        <p> Sorry, no F-Listers around you at the moment.</p>
+  <div id="alone">
+    <p>There's no new around you.</p>
 
-        <span className="pulse">
-            <img src={`/images/users/${activeUserImage}`} alt="You..." />
-        </span>
+    <span className="pulse">
+      <img src={`/images/users/${activeUserImage}`} alt="You..." />
+    </span>
 
-        <div id="liked-people">
-            <p>
-                {likedUsers.length > 0 &&
-                "F-Listers you liked. Hoping for a like back"}
-            </p>
+    <div id="liked-people">
+      <p>
+        {likedUsers.length > 0
+          ? "People you liked...let's hope they like you too!"
+          : ''}
+      </p>
 
-            {likedUsers.map(item => (
-                <LikedPerson key={item.id} person={item} />
-            ))}
+      {likedUsers.map(item => (
+        <LikedPerson key={item.id} person={item} />
+      ))}
 
-            <p>{superLikedUsers.length && 'People you super liked'}</p>
+      <p>{superLikedUsers.length > 0 ? 'People you super liked!' : ''}</p>
 
-            {superLikedUsers.map(item => (
-                <SuperLikedPerson key={item.id} person={item} />
-            ))}
-
-
-        </div>
+      {superLikedUsers.map(item => (
+        <LikedPerson key={item.id} person={item} />
+      ))}
     </div>
-)
+  </div>
+);
+
+export default Alone;

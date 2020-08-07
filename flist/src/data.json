@@ -1,0 +1,36 @@
+[
+    {
+      "id": 0,
+      "name": "Kersti",
+      "desc": "Sticker_Star",
+      "age": 21,
+      "image": "1200px-Kersti_PMSS.png",
+      "likedUsers": [],
+      "superLikedUsers": [],
+      "dislikedUsers": [],
+      "likedBy": []
+    },
+    {
+      "id": 1,
+      "name": "Huey",
+      "desc": "Color_Splash",
+      "age": 32,
+      "image": "Huey.PNG.png",
+      "likedUsers": [],
+      "superLikedUsers": [],
+      "dislikedUsers": [],
+      "likedBy": []
+    },
+    {
+      "id": 2,
+      "name": "Olivia",
+      "desc": "Origami_King",
+      "age": 23,
+      "image": "OliviaArtwork.png",
+      "likedUsers": [],
+      "superLikedUsers": [],
+      "dislikedUsers": [],
+      "likedBy": []
+    }
+    
+  ]

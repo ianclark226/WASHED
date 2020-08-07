@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './Logo';
+// import Logo from './Logo';
 
 const Header = () => (
     <header>
@@ -10,7 +10,7 @@ const Header = () => (
         </div>
 
         <div className="fl">
-            <Logo />
+            {/* <Logo /> */}
 
         </div>
 
