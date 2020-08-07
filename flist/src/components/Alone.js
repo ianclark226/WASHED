@@ -6,7 +6,7 @@ const Alone = ({ activeUserImage, likedUsers, superLikedUsers }) => (
     <p>There's no new around you.</p>
 
     <span className="pulse">
-      <img src={`/images/users/${activeUserImage}`} alt="You..." />
+      <img src={`/users/${activeUserImage}`} alt="You..." />
     </span>
 
     <div id="liked-people">

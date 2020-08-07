@@ -1,10 +1,10 @@
 [
     {
       "id": 0,
-      "name": "Kersti",
-      "desc": "Sticker_Star",
-      "age": 21,
-      "image": "1200px-Kersti_PMSS.png",
+      "name": "Twink",
+      "desc": "Star_Haven",
+      "age": 25,
+      "image": "twink.jpg",
       "likedUsers": [],
       "superLikedUsers": [],
       "dislikedUsers": [],
@@ -31,6 +31,17 @@
       "superLikedUsers": [],
       "dislikedUsers": [],
       "likedBy": []
-    }
+    },
+    {
+        "id": 3,
+        "name": "Kersti",
+        "desc": "Sticker_Star",
+        "age": 21,
+        "image": "1200px-Kersti_PMSS.png",
+        "likedUsers": [],
+        "superLikedUsers": [],
+        "dislikedUsers": [],
+        "likedBy": []
+      }
     
   ]
