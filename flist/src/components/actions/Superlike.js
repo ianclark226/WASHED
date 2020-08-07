@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Superlike = ({userId, modifySuperficialChoices}) => (
-    <button 
+const SuperLike = ({ userId, modifySuperficialChoices }) => (
+  <button
     type="button"
-    onClick={() => modifySuperficialChoices(userId, 'ADD_TO_SUPERLIKED_USER')}
-    >
-        <img src="images/misc/superlike.png" alt="SUPERLike User" />
-    </button>
-)
+    onClick={() => modifySuperficialChoices(userId, 'ADD_TO_SUPERLIKED_USERS')}
+  >
+    <img src="icons/superlike.png" alt="Superlike User" />
+  </button>
+);
 
-export default Superlike;
+export default SuperLike;

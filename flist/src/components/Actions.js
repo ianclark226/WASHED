@@ -4,17 +4,17 @@ import Dislike from './actions/Dislike';
 import Like from './actions/Like';
 import Superlike from './actions/Superlike';
 
-const Actions = ({ person, modifiySuperificialChoices }) => (
+const Actions = ({ person, modifySuperficialChoices }) => (
     <div id="actions">
         <Rewind userId={person.id} />
         <Dislike userId={person.id}
-        modifiySuperificialChoices={modifiySuperificialChoices}
+        modifySuperficialChoices={modifySuperficialChoices}
         />
          <Like userId={person.id}
-        modifiySuperificialChoices={modifiySuperificialChoices}
+        modifySuperficialChoices={modifySuperficialChoices}
         />
          <Superlike userId={person.id}
-        modifiySuperificialChoices={modifiySuperificialChoices}
+        modifySuperficialChoices={modifySuperficialChoices}
         />
         
 
