@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-import Person from './components/Person';
+import Person from './components/person';
 import Alone from './components/Alone';
 import data from './data.json';
 
